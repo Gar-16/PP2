@@ -6,11 +6,13 @@
 
 
 body {
-    background-color: #a8a8a8d2;
+    background-color: #4C6971;
 }
 
 .start-btn,
-.info-box {
+.info-box,
+.quiz-box,
+.end-screen {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,6 +21,7 @@ body {
 
 
 .start-btn button {
+    font-size: 25px;
     font-weight: 500;
     padding: 15px 30px;
     outline: none;  
@@ -31,13 +34,14 @@ body {
 }
 
 .start-btn button:hover {
-    background-color: #B1A6A4;
+    background-color: #121B1B;
+    color: #f0f8ff;
     
 }
 
 .info-box {
     display: none;
-    background-color: burlywood;
+    background-color: #121B1B;
     padding: 25px;
     border-radius: 10px;
 }
@@ -71,4 +75,115 @@ body {
 
 .info-box .restart:hover {
     background-color: #B1A6A4;
+}
+
+.quiz-box {
+    display: none;
+    width: 550px;
+    background: #CAA25B;
+    border-radius: 5px;
+}
+
+.quiz-box header{
+    position: relative;
+    z-index: 99;
+    height: 70px;
+    padding: 0 30px;
+    background-color: #CAA25B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
+
+.quiz-box header .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quiz-box section {
+    padding: 25px 30px 20px 30px;
+    background-color: #CAA25B;
+}
+
+.que-text {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.option-list {
+    padding: 20px 0;
+    display: block;
+}
+
+.option {
+    background-color: #f0f8ff;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.option:hover {
+    color: #004000;
+    background-color: #cce5ff;
+    border-color:#b8daff;
+}
+
+.quiz-box footer {
+    height: 60px;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.next {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #151b1b;
+    font-size: 15px;
+}
+
+.end-screen {
+    background-color: white;
+    width: 300px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+.end-text {
+    padding-bottom: 15px;
+}
+
+.score-text {
+
+}
+
+.end-screen .restart {
+    font-weight: 500;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #151b1b;
+    display: flex;
+    justify-content: center;
 }

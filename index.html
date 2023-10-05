@@ -41,31 +41,48 @@
     <!-- Quiz Box -->
     <div class="quiz-box">
         <header>
-            <div class="title">Awesome Quiz Application</div>
+            <div class="title">Video Game Quiz</div>
             <div class="timer">
                 <div class="time-text">Time Left</div>
                 <div class="timer-sec">15</div>
             </div>
         </header>
+        <!-- Questions -->
         <section>
             <div class="que-text">
                 <h3>Question</h3>
             </div>
             <div class="option-list">
-                <h4 class="option">Answer 1</h4>
-                <div class="icon"><i class="fa-solid fa-question"></i></div>
+                <h4 class="option">Answer 1
+                    <div class="icon correct"><i class="fa-regular fa-circle-check fa-xl" style="color: #2ed822;"></i></div>
+                </h4>
                 
-                <h4 class="option">Answer 2</h4>
-                <div class="icon"><i class="fa-solid fa-question"></i></div>
+                <h4 class="option">Answer 2
+                    <div class="icon wrong"><i class="fa-regular fa-circle-xmark fa-xl" style="color: #e63333;"></i></div>
+                </h4>
 
                 <h4 class="option">Answer 3</h4>
-                <div class="icon"><i class="fa-solid fa-question"></i></div>
 
                 <h4 class="option">Answer 4</h4>
-                <div class="icon"><i class="fa-solid fa-question"></i></div>
 
             </div>
         </section>
+
+        <!-- Bottom of Questions Box -->
+        <footer>
+            <button class="next">Next Question</button>
+        </footer>
+    </div>
+
+    <!--End Screen-->
+    <div class="end-screen">
+        <h3 class="end-text">You've reached the end!</h3>
+        <div class="score-text">
+            You got 2 out of 5!
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay</button>
+        </div>
     </div>
 
 

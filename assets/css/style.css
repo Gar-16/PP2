@@ -170,14 +170,18 @@ body {
 
 .end-text {
     padding-bottom: 15px;
+    font-size: 26px;
 }
 
 .score-text {
-
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: flex;
+    
 }
 
 .end-screen .restart {
-    font-weight: 500;
+    font-size: 17px;
     padding: 15px 30px;
     outline: none;
     border: none;
@@ -186,4 +190,14 @@ body {
     color: #151b1b;
     display: flex;
     justify-content: center;
+}
+
+.end-screen .restart:hover {
+    background-color: #121B1B;
+    color: #f0f8ff;
+}
+
+.score-text p {
+    padding-left: 5px;
+    padding-right: 5px;
 }
